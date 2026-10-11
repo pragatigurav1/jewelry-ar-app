@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.jewelryar.OverlayView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="48dp"
+        android:background="#B3121212"
+        android:letterSpacing="0.05"
+        android:paddingStart="18dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/gold"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="Flip"
+        android:textColor="@color/dark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/fingerBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="#B3121212"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <Button android:id="@+id/btnThumb" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="@color/gold" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:text="Thumb" android:textColor="@color/dark" android:textSize="11sp" />
+        <Button android:id="@+id/btnIndex" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="@color/gold" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:text="Index" android:textColor="@color/dark" android:textSize="11sp" />
+        <Button android:id="@+id/btnMiddle" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="@color/gold" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:text="Middle" android:textColor="@color/dark" android:textSize="11sp" />
+        <Button android:id="@+id/btnRing" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="@color/gold" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:text="Ring" android:textColor="@color/dark" android:textSize="11sp" />
+        <Button android:id="@+id/btnLittle" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="@color/gold" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:text="Little" android:textColor="@color/dark" android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>
